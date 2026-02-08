@@ -341,6 +341,7 @@ const std::string& Simulation::convertSignalToScreen(Intersection::Colors color)
 		break;
 	default:
 		// Should never reach here. All enum values are covered.
-		return "unknown";
+		static const std::string unknown = "unknown";
+		return unknown;
 	}
 }

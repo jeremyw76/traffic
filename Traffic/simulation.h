@@ -57,6 +57,7 @@ private:
 	bool _isRunning = false;
 
 	std::future<void> _simulationCycle;
+	std::future<void> _monitorCycle;
 
 	Renderer _renderer;
 
